@@ -1,4 +1,3 @@
-import { OrbitControls } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import { useState, useEffect } from "react"
 import { COLORS } from "../../constans/colors"
@@ -13,14 +12,14 @@ const Queen = () =>{
 
     useEffect(() => {
         const onScroll = () => {
-          const scrollCheck = window.scrollY < 1300
+          const scrollCheck = window.scrollY < 1000
           if (scrollCheck !== scroll) {
             setScroll(scrollCheck)
           }
         }
       
       // setting the event handler from web API
-      document.addEventListener("scroll", onScroll)
+        document.addEventListener("scroll", onScroll)
       
       // cleaning up from the web API
        return () => {
@@ -32,13 +31,12 @@ const Queen = () =>{
         <div className="queen" onMouseMove={e => setPos([e.clientX, e.clientY])}>
             <div className={scroll ?  "queen-canvas" : "queen-canvas-static"}>
                 <Canvas>
-                    <pointLight position={[2, 2, 2]} intensity={100} color={DARK_BLUE} />
-                    <pointLight position={[-2, -2, -2]} intensity={100} color={DARK_BLUE} />
-                    <pointLight position={[0, 2, -1]} intensity={100} color={DARK_BLUE} />
-                    <pointLight position={[0, 0, 2]} intensity={100} color={DARK_BLUE} />
+                    <pointLight position={[-1, 2, 2]} intensity={100} color={DARK_BLUE} />
+                    <pointLight position={[-5, -2, -2]} intensity={100} color={DARK_BLUE} />
+                    <pointLight position={[-3, 1, 3]} intensity={100} color={DARK_BLUE} />
+                    <pointLight position={[-3, 0, 2]} intensity={100} color={DARK_BLUE} />
                     <ambientLight intensity={100} color={DARK_BLUE} />
-                    <Object pos={pos[0] !== 0 && pos[1] !== 0 ? pos : [0, 0]} />
-                    <OrbitControls />
+                    <Object pos={pos[0] !== 0 && pos[1] !== 0 ? pos : [0, 10]} />
                 </Canvas>
             </div>
             <div className="queen-text">
