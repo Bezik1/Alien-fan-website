@@ -1,0 +1,65 @@
+.queen {
+    margin-top: -120px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1000px;
+}
+
+.queen-canvas-static {
+    margin-top: 150px;
+    width: 50%;
+    height: 100%;
+    position: static;
+}
+
+.queen-canvas {
+    margin-top: 150px;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+}
+
+.queen-text {
+    position: absolute;
+    height: 1200px;
+    background: #553c6a;
+    padding: 50px;
+    text-align: left;
+    font-size: 20px;
+    width: 35%;
+    top: 200px;
+    right: 150px;
+    color: #fff;
+}
+
+.queen-header {
+    color: #c494ec;
+    font-size: 2em;
+    animation: animationHeader 2s infinite;
+}
+
+
+@keyframes animationHeader {
+    0%{
+        text-shadow:
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 40px #c494ec,
+            0 0 80px #c494ec,
+            0 0 90px #c494ec,
+            0 0 100px #c494ec,
+            0 0 150px #c494ec;
+    }
+    100%{
+        text-shadow:
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 10px #c494ec,
+            0 0 45px #c494ec,
+            0 0 55px #c494ec,
+            0 0 80px #c494ec;
+    }
+}

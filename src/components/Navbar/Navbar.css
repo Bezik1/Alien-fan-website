@@ -7,7 +7,7 @@ body {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #141127;
+    background-color: #553c6a;
     z-index: 5;
     color: #fff;
 }
@@ -25,14 +25,6 @@ body {
     font-size: 25px;
     text-decoration: none;
     color: #fff;
-    text-shadow:
-    0 0 2px #bbb,
-    0 0 4px #bbb,
-    0 0 6px #bbb,
-    0 0 40px #bbb,
-    0 0 80px #bbb,
-    0 0 90px #bbb,
-    0 0 150px #bbb;
 }
 
 .nav-link:hover {

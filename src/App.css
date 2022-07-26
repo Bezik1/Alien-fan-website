@@ -1,4 +1,6 @@
 .App {
+  background: radial-gradient(#4f3263, #110314);
+  height: 2500px;
   text-align: center;
 }
 
