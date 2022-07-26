@@ -7,7 +7,7 @@
 }
 
 .queen-canvas-static {
-    background-color: #fff;
+    background: #6b5180;
     margin-top: 750px;
     width: 100%;
     height: 100%;
@@ -15,8 +15,8 @@
 }
 
 .queen-canvas {
-    background-color: #fff;
-    margin-top: 150px;
+    background: #6b5180;
+    margin-top: 170px;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@
     text-align: left;
     font-size: 20px;
     width: 35%;
-    top: 120px;
+    top: 100px;
     right: 150px;
     color: #fff;
 }

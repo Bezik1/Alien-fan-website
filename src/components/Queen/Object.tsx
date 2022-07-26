@@ -17,13 +17,14 @@ const Object = ({ pos } : { pos: number[] }) =>{
 
     useFrame(() =>{
         gsap.to(OBJ.rotation, {
-            x: (pos[1] - 600) / 1000,
-            y: (pos[0] + 600) / 2000
+            x: (pos[1] - 900) / 1000,
+            y: (pos[0] + 600) / 2000,
+            z: 0.1
         })
     })
 
     return (
-        <primitive position={[-3, 0, 0]} scale={[2.75, 2.75, 2.75]} object={OBJ} />
+        <primitive position={[-3, 0.25, 0]} scale={[2.75, 2.75, 2.75]} object={OBJ} />
     )
 }
 

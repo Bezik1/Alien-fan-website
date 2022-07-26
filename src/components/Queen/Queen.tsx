@@ -35,7 +35,6 @@ const Queen = () =>{
                     <pointLight position={[-5, -2, -2]} intensity={100} color={DARK_BLUE} />
                     <pointLight position={[-3, 1, 3]} intensity={100} color={DARK_BLUE} />
                     <pointLight position={[-3, 0, 2]} intensity={100} color={DARK_BLUE} />
-                    <ambientLight intensity={100} color={DARK_BLUE} />
                     <Object pos={pos[0] !== 0 && pos[1] !== 0 ? pos : [0, 10]} />
                 </Canvas>
             </div>

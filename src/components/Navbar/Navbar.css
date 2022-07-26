@@ -3,17 +3,18 @@ body {
 }
 
 .nav {
-    filter: opacity(80%);
+    transition: 1s;
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #553c6a;
+    background-color: #3b294a;
+    height: 75px;
     z-index: 5;
     color: #fff;
 }
 
 .nav-links {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: right;
