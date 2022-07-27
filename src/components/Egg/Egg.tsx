@@ -1,20 +1,22 @@
 import { Canvas } from "@react-three/fiber"
-import { useState, useEffect } from "react"
-import { COLORS } from "../../constans/colors"
 import Object from "./Object"
-import './Queen.css'
+import { useState, useEffect } from "react"
 
-const Queen = () =>{
-    const [pos, setPos] = useState<[number, number]>([0, 0])
+import './Egg.css'
+import { COLORS } from "../../constans/colors"
+
+const Egg = () =>{
     const { DARK_BLUE } = COLORS
-
-    const [scroll, setScroll] = useState(true)
+    const [scroll, setScroll] = useState(false)
 
     useEffect(() => {
         const onScroll = () => {
-          const scrollCheck = window.scrollY < 1000
-          if (scrollCheck !== scroll) {
-            setScroll(scrollCheck)
+          const scrollCheck = window.scrollY > 4000 
+          const scrollCheck2 = window.scrollY > 3400 && window.scrollY < 4000
+          if (scrollCheck2 !== scroll) {
+            setScroll(scrollCheck2)
+          } else if(scrollCheck) {
+            setScroll(!scrollCheck)
           }
         }
       
@@ -28,21 +30,19 @@ const Queen = () =>{
       }, [scroll, setScroll])
 
     return (
-        <div className="queen" onMouseMove={e => setPos([e.clientX, e.clientY])}>
-            <div className={scroll ?  "queen-canvas" : "queen-canvas-static"}>
+        <div className="egg">
+            <div className={scroll ? "egg-canvas" : "egg-canvas-static"}>
                 <Canvas>
                     <ambientLight />
                     <pointLight position={[-1, 2, 2]} intensity={10} color={DARK_BLUE} />
                     <pointLight position={[-5, -2, -2]} intensity={10} color={DARK_BLUE} />
                     <pointLight position={[-3, 1, 3]} intensity={10} color={DARK_BLUE} />
                     <pointLight position={[-3, 0, 2]} intensity={10} color={DARK_BLUE} />
-                  <Object pos={pos[0] !== 0 && pos[1] !== 0 ? pos : [0, 10]} />
+                    <Object />
                 </Canvas>
             </div>
-            <div className="queen-text">
-                <h1 className="queen-header"> Alien Queen </h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <div className="egg-text">
+                <h1 className="egg-header">  Xenomorph Egg </h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
@@ -51,4 +51,4 @@ const Queen = () =>{
     )
 }
 
-export default Queen
+export default Egg

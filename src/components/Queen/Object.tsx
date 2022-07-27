@@ -1,7 +1,7 @@
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader"
 import { useFrame, useLoader } from "@react-three/fiber"
 import { MODELS_URL } from "../../constans/enums"
-import { MeshPhongMaterial } from "three"
+import { MeshPhysicalMaterial } from "three"
 import { COLORS } from "../../constans/colors"
 import gsap from "gsap"
 
@@ -12,7 +12,11 @@ const Object = ({ pos } : { pos: number[] }) =>{
     const OBJ = useLoader(OBJLoader, QUEEN_URL)
 
     OBJ.children.map((mesh: any)=>{
-        return mesh.material = new MeshPhongMaterial({color: DARK_VIOLET})
+        return mesh.material = new MeshPhysicalMaterial({
+            color: DARK_VIOLET,
+            roughness: 0.01,
+            transmission: 0.2,
+        })
     })
 
     useFrame(() =>{

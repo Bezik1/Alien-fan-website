@@ -3,7 +3,7 @@
     height: 400px;
     position: absolute;
     top: 2000px;
-    background: url("https://i.pinimg.com/originals/8a/44/e2/8a44e2363b59fd264e024162d6e66c2d.jpg") center;
+    background: url("../../assets/space.jpg") center;
     background-attachment: fixed;
 }
 

@@ -1,0 +1,43 @@
+.egg {
+    position: absolute;
+    top: 2800px;
+    width: 100%;
+    height: 1000px;
+}
+
+.egg-canvas-static {
+    background: #6b5180;
+    position: static;
+    margin-top: 750px;
+    right: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.egg-canvas {
+    background: #6b5180;
+    position: fixed;
+    top: 170px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.egg-text {
+    position: absolute;
+    height: 1025px;
+    background: #553c6a;
+    padding: 50px;
+    text-align: left;
+    font-size: 20px;
+    width: 35%;
+    top: 625px;
+    left: 100px;
+    color: #fff;
+}
+
+.egg-header {
+    color: #c494ec;
+    font-size: 3em;
+    animation: animationHeader 2s infinite;
+}
