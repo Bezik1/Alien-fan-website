@@ -11,8 +11,8 @@ const Egg = () =>{
 
     useEffect(() => {
         const onScroll = () => {
-          const scrollCheck = window.scrollY > 4000 
-          const scrollCheck2 = window.scrollY > 3400 && window.scrollY < 4000
+          const scrollCheck = window.scrollY > 3000 
+          const scrollCheck2 = window.scrollY > 2550 && window.scrollY < 3000
           if (scrollCheck2 !== scroll) {
             setScroll(scrollCheck2)
           } else if(scrollCheck) {
