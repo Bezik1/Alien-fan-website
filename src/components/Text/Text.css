@@ -1,0 +1,18 @@
+.text {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 2000px;
+    background: url("https://i.pinimg.com/originals/8a/44/e2/8a44e2363b59fd264e024162d6e66c2d.jpg") center;
+    background-attachment: fixed;
+}
+
+.text-label {
+    margin-top: 100px;
+    text-align: center;
+    font: bolder 10vw 'Alfa Slab One';
+    text-align: center;
+    background: #3b294a;
+    background-clip: text;
+    color: #3b294a;
+}

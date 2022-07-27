@@ -19,7 +19,7 @@ const Object = ({ pos } : { pos: number[] }) =>{
         gsap.to(OBJ.rotation, {
             x: (pos[1] - 900) / 1000,
             y: (pos[0] + 600) / 2000,
-            z: 0.1
+            z: 0.15
         })
     })
 
