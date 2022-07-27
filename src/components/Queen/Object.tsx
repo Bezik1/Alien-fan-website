@@ -7,12 +7,12 @@ import gsap from "gsap"
 
 const Object = ({ pos } : { pos: number[] }) =>{
     const { QUEEN_URL } = MODELS_URL
-    const { BLACK } = COLORS
+    const { DARK_VIOLET } = COLORS
 
     const OBJ = useLoader(OBJLoader, QUEEN_URL)
 
     OBJ.children.map((mesh: any)=>{
-        return mesh.material = new MeshPhongMaterial({color: BLACK})
+        return mesh.material = new MeshPhongMaterial({color: DARK_VIOLET})
     })
 
     useFrame(() =>{
