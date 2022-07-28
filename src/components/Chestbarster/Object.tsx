@@ -19,10 +19,11 @@ const Object = () =>{
         u_active: { value: false }
     }
 
-    useFrame(({ clock }) => meshRef.current.material.uniforms.u_time.value = clock.getElapsedTime())
+    useFrame(({ clock }) => meshRef.current.material.uniforms.u_time.value = clock.getElapsedTime() / 2)
     
     return (
         <mesh
+            position={[0, 0.5, 0]}
             ref={meshRef}
         >
             <planeGeometry args={[12, 8, 24, 6]} />

@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import Alien from "../Alien/Alien"
 import Chestbarster from "../Chestbarster/Chestbarster"
 import Egg from "../Egg/Egg"
 import Loading from "../Loading/Loading"
@@ -12,6 +13,7 @@ const Aliens = () =>{
             <Text />
             <Egg />
             <Chestbarster />
+            <Alien />
         </Suspense>
     )
 }

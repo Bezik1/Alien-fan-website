@@ -7,6 +7,7 @@
 }
 
 .chestbarster-canvas {
+    margin-top: 20px;
     width: 100%;
     height: 75%;
 }
@@ -14,10 +15,10 @@
 .chestbarster-text {
     z-index: 3;
     text-align: center;
-    font-size: 5em;
+    font-size: 6em;
     margin-top: 50px;
     animation: animationText 2s infinite;
-    color: #a90404;
+    color: #fa0101;
 }
 
 @keyframes animationText {
