@@ -3,6 +3,7 @@ body {
 }
 
 .nav {
+    filter: opacity(75%);
     transition: 1s;
     position: sticky;
     top: 0;
@@ -14,7 +15,6 @@ body {
 }
 
 .nav-links {
-    cursor: pointer;
     padding: 10px;
     display: flex;
     flex-direction: row;
