@@ -22,7 +22,7 @@ const Object = () =>{
     camera.lookAt(new Vector3(0, -30, -10))
 
     return (
-        <primitive scale={[0.05, 0.05, 0.05]} position={[20, -30, -10]} object={OBJ} />
+        <primitive scale={[0.05, 0.05, 0.05]} position={[25, -30, -15]} object={OBJ} />
     )
 }
 
