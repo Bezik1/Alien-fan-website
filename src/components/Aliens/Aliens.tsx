@@ -1,6 +1,5 @@
 import { Suspense } from "react"
 import Alien from "../Alien/Alien"
-import Chestbarster from "../Chestbarster/Chestbarster"
 import Egg from "../Egg/Egg"
 import Loading from "../Loading/Loading"
 import Queen from "../Queen/Queen"
@@ -15,7 +14,6 @@ const Aliens = () =>{
                 <Queen />
                 <Text />
                 <Egg />
-                <Chestbarster />
                 <Alien />
             </div>
         </Suspense>

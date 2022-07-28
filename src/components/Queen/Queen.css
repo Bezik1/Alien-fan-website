@@ -30,7 +30,7 @@
     text-align: left;
     font-size: 20px;
     width: 35%;
-    top: 50px;
+    top: 25px;
     right: 150px;
     color: #fff;
 }
@@ -73,7 +73,6 @@
     width: 100%;
     position: fixed;
     z-index: 10;
-    filter: opacity(75%);
     background: #261e2d;
 }
 
