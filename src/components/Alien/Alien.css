@@ -5,7 +5,7 @@
     height: 800px;
     position: absolute;
     top: 5000px;
-    background-color: #2e1313;
+    background-color: #6b5180;
 }
 
 .alien-canvas {
@@ -15,19 +15,19 @@
 
 .alien-text {
     font-weight: 500;
-    height: 850px;
-    background-color: #ad2828;
+    height: 800px;
+    background-color: #553c6a;
     padding: 20px;
     margin-top: -40px;
     margin-left: 50px;
     text-align: left;
     font-size: 20px;
     width: 35%;
-    color: #000
+    color: #fff
 }
 
 .alien-header {
-    color: #ff0000;
+    color: #c494ec;
     font-size: 3em;
     animation: animationLoop 2s infinite;
 }
@@ -35,23 +35,23 @@
 @keyframes animationLoop {
     0%{
         text-shadow:
-            0 0 2px #ff0000,
-            0 0 4px #ff0000,
-            0 0 6px #ff0000,
-            0 0 40px #ff0000,
-            0 0 80px #ff0000,
-            0 0 90px #ff0000,
-            0 0 100px #ff0000,
-            0 0 150px #ff0000;
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 40px #c494ec,
+            0 0 80px #c494ec,
+            0 0 90px #c494ec,
+            0 0 100px #c494ec,
+            0 0 150px #c494ec;
     }
     100%{
         text-shadow:
-            0 0 2px #ff0000,
-            0 0 4px #ff0000,
-            0 0 6px #ff0000,
-            0 0 10px #ff0000,
-            0 0 45px #ff0000,
-            0 0 55px #ff0000,
-            0 0 80px #ff0000;
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 10px #c494ec,
+            0 0 45px #c494ec,
+            0 0 55px #c494ec,
+            0 0 80px #c494ec;
     }
 }
