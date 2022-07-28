@@ -65,3 +65,42 @@
             0 0 80px #c494ec;
     }
 }
+
+.menu-link {
+    text-decoration: none;
+    color: #9b74bb;
+    position: absolute;
+    top: 0px;
+    left: 47%;
+    z-index: 3;
+    font-size: 3em;
+    animation: animationMenuLink 2s infinite;
+}
+
+.menu-link:hover {
+    color: #c494ec;
+}
+
+@keyframes animationMenuLink {
+    0%{
+        text-shadow:
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 40px #c494ec,
+            0 0 80px #c494ec,
+            0 0 90px #c494ec,
+            0 0 100px #c494ec,
+            0 0 150px #c494ec;
+    }
+    100%{
+        text-shadow:
+            0 0 2px #c494ec,
+            0 0 4px #c494ec,
+            0 0 6px #c494ec,
+            0 0 10px #c494ec,
+            0 0 45px #c494ec,
+            0 0 55px #c494ec,
+            0 0 80px #c494ec;
+    }
+}

@@ -6,14 +6,18 @@ import Loading from "../Loading/Loading"
 import Queen from "../Queen/Queen"
 import Text from '../Text/Text'
 
+import './Aliens.css'
+
 const Aliens = () =>{
     return (
         <Suspense fallback={<Loading />}>
-            <Queen />
-            <Text />
-            <Egg />
-            <Chestbarster />
-            <Alien />
+            <div className="aliens">
+                <Queen />
+                <Text />
+                <Egg />
+                <Chestbarster />
+                <Alien />
+            </div>
         </Suspense>
     )
 }

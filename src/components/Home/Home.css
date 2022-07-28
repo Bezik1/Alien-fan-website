@@ -1,0 +1,63 @@
+.home {
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(#006f00, #000);
+}
+
+.alien-link {
+    text-decoration: none;
+    color: #046b04;
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    z-index: 3;
+    font-size: 3em;
+    animation: animationAlienLink 2s infinite;
+}
+
+.alien-link:hover {
+    color: #08af08;
+}
+
+.info-link {
+    text-decoration: none;
+    color: #046b04;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    z-index: 3;
+    font-size: 3em;
+    animation: animationAlienLink 2s infinite;
+}
+
+.info-link:hover {
+    color: #08af08;
+}
+
+.alien-link:hover {
+    color: #08af08;
+}
+
+@keyframes animationAlienLink {
+    0%{
+        text-shadow:
+            0 0 2px #08af08,
+            0 0 4px #08af08,
+            0 0 6px #08af08,
+            0 0 40px #08af08,
+            0 0 80px #08af08,
+            0 0 90px #08af08,
+            0 0 100px #08af08,
+            0 0 150px #08af08;
+    }
+    100%{
+        text-shadow:
+            0 0 2px #08af08,
+            0 0 4px #08af08,
+            0 0 6px #08af08,
+            0 0 10px #08af08,
+            0 0 45px #08af08,
+            0 0 55px #08af08,
+            0 0 80px #08af08;
+    }
+}

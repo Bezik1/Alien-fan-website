@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { COLORS } from "../../constans/colors"
 import Object from "./Object"
 import './Queen.css'
@@ -29,6 +30,7 @@ const Queen = () =>{
 
     return (
         <div className="queen" onMouseMove={e => setPos([e.clientX, e.clientY])}>
+            <Link className="menu-link" to='/home'> Home </Link>
             <div className={scroll ?  "queen-canvas" : "queen-canvas-static"}>
                 <Canvas>
                     <ambientLight />
