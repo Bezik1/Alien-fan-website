@@ -1,4 +1,5 @@
 .aliens {
     width: 100%;
     height: 4500px;
+    min-height: 1000px;
 }

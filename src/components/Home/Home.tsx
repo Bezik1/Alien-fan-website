@@ -15,7 +15,7 @@ const Home = () =>{
                     <ambientLight />
                     <Scene pos={pos ? pos : [0, 0]} />
                 </Canvas>
-                <Link to='/' className='alien-link'> Aliens </Link>
+                <Link to='/aliens' className='alien-link'> Aliens </Link>
                 <Link to='/info' className='info-link'> Info </Link>
             </div>
         </Suspense>

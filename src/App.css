@@ -1,4 +1,5 @@
 .App {
+  min-height: 800px;
   background: #261e2d;
   text-align: center;
 }

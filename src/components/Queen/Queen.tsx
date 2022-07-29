@@ -32,7 +32,7 @@ const Queen = () =>{
         <div className="queen" onMouseMove={e => setPos([e.clientX, e.clientY])}>
           <div className='menu'>
             <Link className="menu-link" to='/info'> Info </Link>
-            <Link className="menu-link" to='/home'> Home </Link>
+            <Link className="menu-link" to='/'> Home </Link>
           </div>
             <div className={scroll ?  "queen-canvas" : "queen-canvas-static"}>
                 <Canvas>
